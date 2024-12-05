@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+
+    <link rel="stylesheet" href="style/header/header.css">
+    <link rel="stylesheet" href="style/footer/footer.css">
+    <link rel="stylesheet" href="style/str3/str3.css">
+    <link rel="stylesheet" href="style/mobile/mobile.css">
+    
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Лого">
+        <nav>
+            <a href="1-я_страница.html">Главная</a>
+            <a href="3-я_страница.html">Первый семестр</a>
+            <a href="#">Второй семестр</a>
+            <a href="2-я_страница.html">Услуги</a>
+            <a href="#">Авторизация</a>
+        </nav>
+        <div class="group-info">
+            <p>Группа ЭФБО-08-23</p>
+            <p>Щепелев Кирилл</p>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <nav id="mobile-nav">
+                <p>Навигация по странице:</p>
+                <ul>
+                    <li><a href="#lectures">Лекции</a></li>
+                    <li><a href="#practices">Практики</a></li>
+                    <li><a href="#adress_vusa">Адрес вуза</a></li>
+                    <li><a href="#rab_programm">Рабочая программа</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="content">
+            <h1 id="main-header">Первый семестр</h1>
+            <!-- Лекции -->
+            <h2 id="lectures">Лекции</h2>
+            <button id="showLecturesBtn">Показать лекции</button>
+            <table id="lectures-table">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Отметка о посещении</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Углубленное изучение HTML</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Основы работы с CSS</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Bootstrap - работа с фреймворком</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Работа с DOM и событиями в JavaScript</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Введение в GitHub и GitHub Pages</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr class="divider">
+
+            <!-- Практики -->
+            <h2 id="practices">Практики</h2>
+            <button id="toggleBtn">Переключить данные в таблице</button>
+            <table id="practices-table">
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Тема</th>
+                        <th>Отметка о посещении</th>
+                        <th>Отметка о выполнении</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Формы и кнопки в HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Таблицы и интерактивные элементы HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Основы работы в CSS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Работы с классами в CSS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Работа с сетками и разметкой в HTML</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Адаптивная вёрстка</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bootstrap</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Базовые задачи на JS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>DOM - структура приложений и работа с объектами в языке JS</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Встраивание скриптов</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Отладка сценариев</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Анимации и работа с ними</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>GitHub</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Защита проекта</td>
+                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr class="divider">
+
+            <!-- Фотография студента -->
+            <h2>Фото студента</h2>
+            <img src="manager.png" id="student-photo" alt="Фото студента" class="student-photo" width="200" height="200">
+
+            <hr class="divider">
+
+            <!-- Встраивание карты -->
+            <h2 id="adress_vusa">Наше местоположение</h2>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A52175b5d1b1ab75dfe2a658588eba47faa0ec2131376d44eba676d7294b0bd34&amp;source=constructor" width="100%" height="400px" frameborder="0"></iframe>
+
+            <h2 id="rab_programm">Рабочая программа</h2>
+            <object data="3-я_страница.html" type="application/pdf" width="800" height="600"></object>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Щепелев Кирилл, 2024</p>
+        <a href="https://vk.com" target="_blank">
+            <img src="icon_vk.png" alt="VK">
+        </a>
+    </footer>
+
+    <button id="scrollTopBtn">Наверх</button>
+
+    <script>
+        // 1. Обработчик события click на H1
+        document.getElementById("main-header").addEventListener("click", function() {
+            alert("Вы кликнули на заголовок - так держать!");
+        });
+
+        // 2. Переключение данных в таблице
+    const toggleBtn = document.getElementById("toggleBtn");
+    const tableBody = document.querySelector("#practices-table tbody");
+
+        // Исходные данные
+    const firstSemesterData = [
+        { number: 1, topic: "Основы языка HTML" },
+        { number: 2, topic: "Формы и кнопки в HTML" },
+        { number: 3, topic: "Таблицы и интерактивные элементы HTML" },
+        { number: 4, topic: "Основы работы в CSS" },
+        { number: 5, topic: "Работы с классами в CSS" },
+        { number: 6, topic: "Работа с сетками и разметкой в HTML" },
+        { number: 7, topic: "Адаптивная вёрстка" },
+        { number: 8, topic: "Bootstrap" },
+        { number: 9, topic: "Основы языка JavaScript" },
+        { number: 10, topic: "Базовые задачи на JS" },
+        { number: 11, topic: "DOM - структура приложений и работа с объектами в языке JS" },
+        { number: 12, topic: "Встраивание скриптов" },
+        { number: 13, topic: "Отладка сценариев" },
+        { number: 14, topic: "Анимации и работа с ними" },
+        { number: 15, topic: "GitHub" },
+        { number: 16, topic: "Защита проекта" },
+    ];
+
+        // Данные для второго семестра
+    const secondSemesterData = [
+        { number: 1, topic: "Базовое бэкенд-приложение" },
+        { number: 2, topic: "HTTP-запросы" },
+        { number: 3, topic: "JSON и работа с ним" },
+        { number: 4, topic: "HTTP-ответы" },
+        { number: 5, topic: "Проектирование API" },
+        { number: 6, topic: "Роутинг и его настройка" },
+        { number: 7, topic: "NoSQL базы данных" },
+        { number: 8, topic: "Обеспечение авторизации и доступа пользователей" },
+        { number: 9, topic: "Работа сторонних сервисов уведомления и авторизации" },
+        { number: 10, topic: "Основы ReactJS" },
+        { number: 11, topic: "Работа с компонентами динамической DOM" },
+        { number: 12, topic: "Использование хуков в React" },
+        { number: 13, topic: "Основы микросервисной архитектуры" },
+        { number: 14, topic: "Разработка классических модулей веб-приложений" },
+        { number: 15, topic: "Разработка классических модулей веб-приложений" },
+    ];
+
+    let isSecondSemester = false; // Флаг переключения
+
+    function updateTable(data) {
+        tableBody.innerHTML = ""; // Очистить таблицу
+        data.forEach((item) => {
+            tableBody.innerHTML += `
+                <tr>
+                    <td>${item.number}</td>
+                    <td>${item.topic}</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            `;
+        });
+    }
+        // Обработчик клика по кнопке
+        toggleBtn.addEventListener("click", () => {
+            if (isSecondSemester) {
+                updateTable(firstSemesterData); // Возвращаем данные первого семестра
+                toggleBtn.textContent = "Переключить данные на второй семестр";
+            } else {
+                updateTable(secondSemesterData); // Отображаем данные второго семестра
+                toggleBtn.textContent = "Переключить данные на первый семестр";
+            }
+            isSecondSemester = !isSecondSemester; // Переключаем флаг
+        });
+
+        // Инициализация таблицы первыми данными
+        updateTable(firstSemesterData);
+
+        // 3. Изменение размеров фотографии
+        const studentPhoto = document.getElementById("student-photo");
+        studentPhoto.addEventListener("mouseover", function() {
+            this.classList.add("rotate");
+        });
+        studentPhoto.addEventListener("mouseout", function() {
+            this.classList.remove("rotate");
+        });
+
+        // 4. Замена фотографии по клику
+        studentPhoto.addEventListener("click", function() {
+            this.src = "RTU_MIREA.png"; // Укажите путь к фото преподавателя
+            this.alt = "Фото преподавателя";
+        });
+
+        // 5. Обработчик dblclick
+        studentPhoto.addEventListener("dblclick", function() {
+            alert("Не налегай, у меня только один университет.");
+        });
+
+        // 6. Анимация изменения цвета фона параграфа
+        const lecturesHeader = document.getElementById("lectures");
+        lecturesHeader.addEventListener("click", function () {
+            lecturesHeader.classList.toggle("clicked");
+        });
+
+        // 7. Плавное появление таблицы лекций
+        const showLecturesBtn = document.getElementById("showLecturesBtn");
+        const lecturesTable = document.getElementById("lectures-table");
+
+        showLecturesBtn.addEventListener("click", () => {
+            lecturesTable.classList.toggle("visible");
+        });
+
+        // Показ кнопки при прокрутке
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        scrollTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+</body>
+</html>

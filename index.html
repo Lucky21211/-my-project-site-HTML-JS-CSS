@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+ 
+    <link rel="stylesheet" href="style/header/header.css">
+    <link rel="stylesheet" href="style/footer/footer.css">
+    <link rel="stylesheet" href="style/str1/str1.css">
+    <link rel="stylesheet" href="style/mobile/mobile.css">
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Лого">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="3-я_страница.html">Первый семестр</a>
+            <a href="#">Второй семестр</a>
+            <a href="2-я_страница.html">Услуги</a>
+            <a href="#">Авторизация</a>
+        </nav>
+        <div class="group-info">
+            <p>Группа ЭФБО-08-23</p>
+            <p>Щепелев Кирилл</p>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <nav id="mobile-nav">
+                <p>Навигация по странице:</p>
+                <ul>
+                    <li><a href="#frontend">Фронтенд</a></li>
+                    <li><a href="#backend">Бэкенд</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="content">
+            <h1 id="dobro">Добро пожаловать на мой сайт</h1>
+            <p>Меня зовут Щепелев Кирилл и я начинающий специалист по веб-разработке.</p>
+
+            <hr class="divider">
+
+            <h2 id="frontend">Фронтенд</h2>
+            <p>Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.</p>
+
+
+            <!-- Видео -->
+        <div class="video">
+            <iframe src="https://rutube.ru/play/embed/f65ac463c9527f739dd49d1e2e82ef97" width="720" height="405" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+            <h2 id="backend">Бэкенд</h2>
+            <p>Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.</p>
+        
+        <div class="video">
+            <iframe width="720" height="405" src="https://rutube.ru/play/embed/67f4ce61a3ee5307317dfda174ac7041" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Щепелев Кирилл, 2024</p>
+        <a href="https://vk.com" target="_blank">
+            <img src="icon_vk.png" alt="VK">
+        </a>
+    </footer>
+
+    <button id="scrollTopBtn">Наверх</button>
+    
+    <script>
+        // Показ кнопки при прокрутке
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        }
+
+        scrollTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+    </script>
+
+</body>
+</html>

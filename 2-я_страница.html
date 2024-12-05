@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+
+    <!-- Подключение Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/str2/str2.css">
+</head>
+<body class="bg-secondary text-light">
+
+    <header class="bg-light text-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="logo.png" alt="Лого" style="height: 50px;">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="3-я_страница.html">Первый семестр</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Второй семестр
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#nashi_uslugi">Наши услуги</a></li>
+                                    <li><a class="dropdown-item" href="#nashi_tarifi">Наши тарифы</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="2-я_страница.html">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Авторизация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div>
+                <p class="m-0">Группа ЭФБО-08-23</p>
+                <p class="m-0">Щепелев Кирилл</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h1 id="nashi_uslugi"> </h1> <h1 class = "text-center text-dark mb-5">Наши услуги</h1>
+
+        <!-- Карточки с услугами -->
+        <div class="row g-4">
+            <!-- Карточка 1 -->
+            <div class="col-md-4">
+                <div class="card bg-teal text-light h-100">
+                    <img src="site-visitka.png" class="card-img-top" alt="Сайт-визитка">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Сайт-визитка</h5>
+                        <p class="card-text">Поможем создать универсальный сайт для раскрутки вашего товара или услуг.</p>
+                        <button class="btn btn-dark mt-auto" onclick="openModal('Сайт-визитка')">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 2 -->
+            <div class="col-md-4">
+                <div class="card bg-teal text-light h-100">
+                    <img src="website.png" class="card-img-top" alt="Корпоративный сайт">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Корпоративный сайт</h5>
+                        <p class="card-text">Помогаем бизнесу создать уникальный сайт, учитывая его специфику.</p>
+                        <button class="btn btn-dark mt-auto" onclick="openModal('Корпоративный сайт')">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Карточка 3 -->
+            <div class="col-md-4">
+                <div class="card bg-teal text-light h-100">
+                    <img src="consultation.png" class="card-img-top" alt="Консультация">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Консультация</h5>
+                        <p class="card-text">Проконсультируем и поможем с решением ваших вопросов.</p>
+                        <button class="btn btn-dark mt-auto" onclick="openModal('Консультация')">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Аккордеон -->
+        <div class="accordion my-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        О наших услугах
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Мы предоставляем широкий спектр услуг, включая создание сайтов, консультации и разработку корпоративных решений.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Почему выбирают нас?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Мы гарантируем качество, индивидуальный подход и профессионализм в каждом проекте.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Таблица -->
+        <h2 id="nashi_tarifi"></h2> <h2 class="text-center text-dark mb-4">Наши тарифы</h2>
+        <table class="text-center">
+            <thead>
+                <tr>
+                    <th scope="col">УСЛУГА</th>
+                    <th scope="col">СТОИМОСТЬ</th>
+                    <th scope="col">СРОК ВЫПОЛНЕНИЯ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Сайт-визитка</td>
+                    <td>20,000 руб.</td>
+                    <td>15 - 30 дней</td>
+                </tr>
+                <tr>
+                    <td>Корпоративный сайт</td>
+                    <td>150,000 - 250,000 руб.</td>
+                    <td>30 - 60 дней</td>
+                </tr>
+                <tr>
+                    <td>Консультация</td>
+                    <td>2,000 руб./час</td>
+                    <td>По договорённости</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="serviceModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Заполните форму</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+
+                <div id="submissionMessage" class="text-center text-success" style="display: none; font-size: 20px; font-weight: bold;">
+                    Форма успешно отправлена!
+                </div>
+
+                <div class="modal-body">
+                    <form id="serviceForm" onsubmit="return validateForm(event)">
+                        <input type="hidden" id="serviceType" name="serviceType">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Телефон:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7(999)123-4567" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Страна:</label>
+                            <select class="form-select" id="country" name="country" required>
+                                <option value="Россия">Россия</option>
+                                <option value="Германия">Германия</option>
+                                <option value="Нидерланды">Нидерланды</option>
+                                <option value="Великобритания">Великобритания</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Дата:</label>
+                            <input type="date" class="form-control" id="date" name="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Комментарии:</label>
+                            <textarea class="form-control" id="comments" name="comments" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-3 text-center">
+        <p>© Щепелев Кирилл, 2024</p>
+    </footer>
+
+    <!-- Скрипты -->
+    <script>
+        function openModal(service) {
+            document.getElementById('serviceType').value = service;
+            new bootstrap.Modal(document.getElementById('serviceModal')).show();
+        }
+
+        // Часть 2: Работа с объектами
+        const formData = {
+            name: "",
+            email: "",
+            phone: "",
+            date: "",
+            comment: "",
+            printData() {
+                console.log(`Имя: ${this.name}`);
+                console.log(`E-mail: ${this.email}`);
+                console.log(`Телефон: ${this.phone}`);
+                console.log(`Дата: ${this.date}`);
+                console.log(`Комментарий: ${this.comment}`);
+            }
+        };
+
+        // Функция для обработки формы
+        function submitForm(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const date = document.getElementById("date").value;
+            const comment = document.getElementById("comments").value;
+
+        // Проверки
+        if (!name || !email || !comment) {
+            alert("Пожалуйста, заполните обязательные поля!");
+            return;
+        }
+
+        if (phone && !/^\d+$/.test(phone)) {
+            alert("Телефон должен содержать только цифры!");
+            return;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Введите корректный email!");
+            return;
+        }
+
+        // Заполняем объект formData
+        formData.name = name;
+        formData.email = email;
+        formData.phone = phone || "Не указан";
+        formData.date = date || "Не указана";
+        formData.comment = comment;
+
+        // Выводим данные в консоль
+        formData.printData();
+
+        // Сообщение об отправке формы
+        const submissionMessage = document.getElementById("submissionMessage");
+        submissionMessage.textContent = "Форма успешно отправлена!"
+        submissionMessage.style.display = "block"; // Показываем сообщение
+        submissionMessage.style.backgroundColor = "rgba(0, 128, 0, 0.8)"; // Фон, чтобы выделить сообщение
+        submissionMessage.style.color = "white"; // Цвет текста
+        submissionMessage.style.padding = "10px"; // Добавляем отступы
+        submissionMessage.style.borderRadius = "5px"; // Закругляем углы
+
+        // Показываем сообщение перед alert
+        setTimeout(() => {
+            alert("Форма успешно отправлена!");
+        }, 300);
+
+        // Убираем сообщение через 3 секунды
+        setTimeout(() => {
+            submissionMessage.style.display = "none";
+        }, 3000);
+
+    }
+
+        // Добавляем обработчик события на форму
+        const form = document.getElementById("serviceForm");
+        form.addEventListener("submit", submitForm);
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
